@@ -3,15 +3,16 @@
 
 #include "PhysicalMaterial.h"
 
-class PhysicalObject {
-	private:
+class PhysicalObject 
+{
+private:
 		float mass;
 		float volume;
-		PhysicalMaterial material;
+		//PhysicalMaterial material;
 		float calculateVolume(float mass, float density);
-;	public:
+public:
 		PhysicalObject(float aMass, PhysicalMaterial &aMaterial);
 		float GetVolume();
 };
 
-#endif;
+#endif

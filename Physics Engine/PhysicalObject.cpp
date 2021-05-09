@@ -1,9 +1,10 @@
 #include <string>
 #include "PhysicalObject.h"
 
-PhysicalObject::PhysicalObject(float aMass, PhysicalMaterial &aMaterial) {
+PhysicalObject::PhysicalObject(float aMass, PhysicalMaterial &aMaterial) 
+{
 	mass = aMass;
-	material = aMaterial;
+	//material = aMaterial;
 	volume = calculateVolume(mass, material.density);
 }
 
